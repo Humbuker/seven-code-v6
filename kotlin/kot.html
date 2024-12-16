@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py.css">
+    <link rel="stylesheet" href="kot.css">
+    <title>SevenCode™ Kotlin</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title" onclick="window.location.href='/index.html'">SevenCode™</h1>
+        <nav class="navbar-menu">
+            <button type="button" class="active" onclick="window.location.href='/java/java.html'">┆Java</button>
+            <button type="button" class="active" onclick="window.location.href='/js/js.html'">┆JavaScript</button>
+            <button type="button" class="active" onclick="window.location.href='/python/python.html'">┆Python</button>
+            <button type="button" class="active" onclick="window.location.href='/cs/cs.html'">┆C#</button>
+            <button type="button" class="active" onclick="window.location.href='/cpp/cpp.html'">┆C++</button>
+            <button type="button" class="active" onclick="window.location.href='/php/php.html'">┆PHP</button>
+            <button type="button" class="active" onclick="window.location.href='/sql/sql.html'">┆SQL</button>
+            <button type="button" class="active" onclick="window.location.href='/html/ht.html'">┆HTML</button>
+            <button type="button" class="active" onclick="window.location.href='/kotlin/kot.html'">┆Kotlin</button>
+        </nav>
+    </nav>
+
+    <header class="main">
+        <h1>
+            Руководство по языку<p> программирования Kotlin
+        </h1>
+        <h3>
+            Kotlin представляет современный, статически типизированный<p> и один из самых быстроразвивающихся языков<p> программирования, созданный и развиваемый<p> компанией JetBrains. Kotlin можно использовать<p> для создания самых разных приложений.
+        </h3>
+
+        <img src="assetskot/kot.jpg" id="kot-img">
+    </header>
+
+    <div class="main-str1">
+       <p>
+        Самым популярным направлением, где применяется Kotlin, является прежде всего разработка под ОС Android. Причем настолько популярным, что компания Google на конференции Google I/O 2017 провозгласила Kotlin одним из официальных языков для разработки под Android (наряду с Java и C++), а инструменты по работе с данным языком были по умолчанию включены в функционал среды разработки Android Studio начиная с версии 3.0.
+        </p>
+       <!-- <img src="assetsht/ht1.png" id="ht1-img"> -->
+    </div>
+
+    <div class="main-str2">
+        <h1>
+            Ключевые особенности Kotlin:
+        </h1>
+        <li>Статическая типизация – Это характеристика языка программирования, которая означает, что тип каждой переменной и выражения известен во время компиляции. Хотя это статически типизированный язык, он не требует от вас явного указания типа каждой объявляемой вами переменной.</li>
+        <li>Классы данных– В Kotlin существуют классы данных, которые приводят к автоматической генерации шаблонов, таких как equals, hashCode, toString, методы получения / установки и многое другое.</li>
+        <img src="assetskot/kot2.png" id="kot2-img">
+        </div>
+
+    <div class="main-str3">
+        <p>
+            В Kotlin классы и объекты используются для представления объектов в реальном мире. Класс — это схема для создания объектов (определенной структуры данных), предоставления начальных значений состояния (переменных или полей-членов) и реализаций поведения (функций или методов-членов).
+        </p>
+        <img src="assetskot/kot3.png" id="kot3-img">
+    </div>
+
+    <div class="main-str4">
+        <h3>
+            Наиболее фундаментальным типом данных в Kotlin является примитивный тип данных, а все остальные являются ссылочными типами, такими как array и string . Java должна использовать оболочки (java.lang.Целое число) для примитивных типов данных, которые должны вести себя как объекты, но у Kotlin уже есть все типы данных как объекты.
+        </h3>
+        <h2>
+            В Kotlin существуют разные типы данных:
+        </h2>
+        <li>Целочисленный тип данных</li>
+        <li>Тип данных с плавающей запятой</li>
+        <li>Логический тип данных</li>
+        <li>Символьный тип данных</li>
+    </div>
+
+    <div class="main-str5">
+        <h3>
+            Операторы - это специальные символы, которые выполняют различные операции с операндами. Например, + и – это операторы, которые выполняют сложение и вычитание соответственно. Как и Java, Kotlin содержит различные типы операторов.
+        </h3>
+        <li>Арифметический оператор</li>
+        <li>Оператор отношения</li>
+        <li>Оператор присваивания</li>
+        <li>Унарный оператор</li>
+        <li>Логический оператор</li>
+        <li>Побитовый оператор</li>
+    </div>
+
+    <div class="main-str6">
+        <h3>
+            Система типов Kotlin направлена на устранение опасности нулевой ссылки в коде, потому что это ошибка стоимостью в миллиард долларов. Исключения NullPointerExceptions выдаются программой во время выполнения и иногда вызывают сбой приложения или системный сбой.
+            Если кто-либо программировал на Java или другом языке, использующем концепцию нулевой ссылки, то он, должно быть, сталкивался с NullPointerException в коде. Компилятор Kotlin также выдает исключение NullPointerException, если он обнаружил какую-либо нулевую ссылку без выполнения каких-либо других инструкций.
+        </h3>
+    </div>
+
+        <div class="FAQ">
+        <div class="one">
+            <h1>
+                Легко ли освоить Kotlin?
+            </h1>
+            <p>
+                Да, Kotlin обычно считается простым в освоении. Он имеет краткий синтаксис, современные функции и совместим с Java, что делает его удобным для начинающих. 
+            </p>
+        </div>
+
+        <div class="two">
+            <h1>
+                Java или Kotlin проще?
+            </h1>
+            <p>
+                Kotlin часто считают более простым из-за его краткого синтаксиса, современных функций и бесшовной совместимости с Java. Однако простота изучения может варьироваться в зависимости от индивидуальных предпочтений и предыдущего опыта. 
+            </p>
+        </div>
+
+        <div class="three">
+            <h1>
+                Какова основная концепция Kotlin?
+            </h1>
+            <p>
+                Kotlin - это статически типизированный язык программирования общего назначения с выводом типов. Он разработан для полного взаимодействия с Java, а байт-код JVM, сгенерированный Kotlin, на 100% совместим с байт-кодом Java. Kotlin - это полнофункциональный язык, который поддерживает объектно-ориентированное программирование, функциональное программирование и метапрограммирование. 
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="start">
+            <h3>Начать обучение</h3>
+            <p>Начните изучать языки программирования с нами.</p>
+            <button>Начать</button>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>SevenCode™</h3>
+                <p>Платформа для изучения языков программирования.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Полезные ссылки</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+
+            <div class="news-col">
+                <h4>Новостная рассылка</h4>
+                <p>Введите свой адрес электронной почты и получайте уведомления о новостях.</p>
+
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

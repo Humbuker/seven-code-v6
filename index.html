@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SevenCode™️</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title">SevenCode™</h1>
+        <nav class="navbar-menu">
+            <button type="button" class="active" onclick="window.location.href='java/java.html'">┆Java</button>
+            <button type="button" class="active" onclick="window.location.href='js/js.html'">┆JavaScript</button>
+            <button type="button" class="active" onclick="window.location.href='/python/python.html'">┆Python</button>
+            <button type="button" class="active" onclick="window.location.href='/cs/cs.html'">┆C#</button>
+            <button type="button" class="active" onclick="window.location.href='/cpp/cpp.html'">┆C++</button>
+            <button type="button" class="active" onclick="window.location.href='/php/php.html'">┆PHP</button>
+            <button type="button" class="active" onclick="window.location.href='/sql/sql.html'">┆SQL</button>
+            <button type="button" class="active" onclick="window.location.href='/html/ht.html'">┆HTML</button>
+            <button type="button" class="active" onclick="window.location.href='/kotlin/kot.html'">┆Kotlin</button>
+        </nav>
+    </nav> 
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="content">
+            <H1>Добро пожаловать на <span class="text_shadows">SevenCode</span></H1>
+            </div>
+            <h4>ИЗУЧАЙ НОВЫЕ ЯЗЫКИ И СТАНОВИСЬ ПРОФЕССИОНАЛОМ</h4>
+            <p>
+                Добро пожаловать в мир программирования!
+                Изучайте языки программирования, создавайте впечатляющие
+                проекты и расширяйте свои навыки вместе с нами
+            </p>
+        </div>
+        <div>
+            <img src="images/code23.jpg" id="code-img">
+        </div>
+</header>    
+
+    <div class="main-str">
+        <div id="line"></div>
+        <div class="oglav">
+            <h1>Языки программирования: какие они бывают</h1>
+            <h3>Рассказываем, на что способны языки программирования и какое направление выбрать</h3>
+        </div>
+        <div class="spiski">
+            <ul>
+                <li><a href="#java_link">Java</a></li>
+                <li><a href="#js_link">JavaScript</a></li>
+                <li><a href="#python_link">Python</a></li>
+                <li><a href="#CS_link">C#</a></li>
+                <li><a href="#CPP_link">C++</a></li>
+                <li><a href="#php_link">PHP</a></li>
+                <li><a href="#sql_link">SQL</a></li>
+                <li><a href="#html_link">HTML</a></li>
+                <li><a href="#kotlin_link">Kotlin</a></li>
+                <li><a href="#itog">Итог</a></li>
+            </ul>
+            <img src="images/codegif.gif" id="code-gif">
+        </div>
+
+        <div class="main-text">
+            <p id="back"></p>
+            <div class="name-oglav">
+                <div id="html_link">
+                    <h1>HTML</h1>
+                <h3>
+                    HTML (Hyper Text Markup Language) — язык разметки, который задаёт структуру веб-страницы с<p> помощью тегов. Теги указывают браузеру, как отображать содержимое: «это заголовок», «это абзац»,<p> «это картинка», «это ссылка».
+                </h3>
+                <h3>
+                    CSS (Cascading Style Sheets) — каскадные таблицы стилей, которые описывают внешний вид<p> страницы: шрифт, фон, цвета, видимость элементов и многое другое. К каждому элементу страницы<p> может применяться несколько стилей, а каскадность определяет порядок применения стилей к элементу<p> — например, сначала увеличить размер шрифта, потом сделать текст курсивом, а в конце покрасить его<p> в синий цвет.
+                </h3>
+                </div>
+    
+                <div id="java_link">
+                    <h1>JAVA</h1>
+                    <h3>
+                        Java — кроссплатформенный язык с поддержкой ООП. Код на Java одинаково запускается и на умном<p> холодильнике, и на микроконтроллере, и на кнопочном телефоне. Всё дело в Java Virtual Machine (JVM)<p> — посреднике между кодом и железом.
+                    </h3>
+                    <h3>
+                        Компилятор Java создаёт из написанного программистом кода байт-код. Виртуальная машина, учитывая<p> аппаратную платформу, на которой запускается программа, загружает байт-код, проверяет и выполняет<p> его. Получается, что один и тот же код одинаково<p> просто запускается на разных платформах. Плюс виртуальная машина автоматически управляет памятью.
+                    </h3>
+                </div>
+    
+                <div id="js_link">
+                    <h1>JAVASCRIPT</h1>
+                    <h3>
+                        JavaScript — язык-монополист во фронтенд-разработке. С его помощью программисты оживляют страницы,<p> добавляя динамический контент: по щелчку мыши меняется фон, при скролле вниз подгружается<p> новый контент, проверяются данные в формах при покупке авиабилетов и всплывают уведомления в соцсетях.
+                    </h3>
+                    <h3>
+                        Чтобы каждый раз не писать с нуля базовую логику приложения, разработчики используют фреймворки — заранее<p> написанный код или шаблоны, задающие архитектуру приложения. JS-фреймворки, которые чаще всего используют<p> разработчики: React, Angular и Vue.js
+                    </h3>
+                </div>
+    
+                <div id="python_link">
+                    <h1>PYTHON</h1>
+                    <h3>
+                        Python — простой высокоуровневый язык с большими возможностями. Язык хорош для начинающих разработчиков,<p> подходит для разных задач и применяется во многих сферах, от машинного обучения до создания игр и проведения<p> научных исследований.
+                    </h3>
+                    <h3>
+                        Философия Python: красивое лучше, чем уродливое, явное лучше, чем неявное, простое лучше, чем сложное, а<p> сложное лучше, чем запутанное.
+                    </h3>
+                </div>
+    
+                <div id="CS_link">
+                    <h1>C#</h1>
+                    <h3>
+                        C#, или «си-шарп», — объектно-ориентированный язык c автоматическим управлением памятью, разработанный<p> компанией Microsoft для платформы .NET. На C# пишут программы для экосистемы Microsoft и веб-приложения.<p> Для машинного обученияp используют фреймворк ML.NET, а игры создают на движке Unity. Написали код и теперь<p> нужно перенести на другую платформу?<p> Фреймворк Mono поможет с переездом на все популярные платформы: Windows, macOS, Linux, Android и iOS.
+                    </h3>
+                </div>
+    
+                <div id="CPP_link">
+                    <h1>C++</h1>
+                    <h3>
+                        С++ или просто «плюсы» — объектно-ориентированный язык, на котором пишут сложные сервисы, требующие<p> скорости и производительности. Изначально С++ создавался, как усовершенствованный вариант языка C,<p> который сохранял бы с ним обратную совместимость. При этом добавились ООП, обработка исключений,<p> перегрузка операторов и другие полезные нововведения.
+                    </h3>
+                </div>
+    
+                <div id="php_link">
+                    <h1>PHP</h1>
+                    <h3>
+                        PHP — серверный язык программирования, он отвечает за бэкенд — ту часть продукта, которую не видит<p> пользователь. Например, когда покупатель нажимает кнопку «Оформить заказ», появляется сообщение,<p> что оплата прошла и заказ начали собирать. Для этого сайт отправляет запросы разным сервисам: базе<p> данных — она подтвердит наличие информации о пользователе, платёжным шлюзам — они вернут от<p> банка ответ об оплате, сервису логистики — он сообщит, что товар есть на складе. Эта невидимая для<p> пользователя работа может быть реализована с помощью кода, написанного на PHP.
+                    </h3>
+                </div>
+    
+                <div id="sql_link">
+                    <h1>SQL</h1>
+                    <h3>
+                        SQL (сокращение от англ. Structured Query Language) — это язык запросов, который применяют, чтобы работать<p> с базами данных, структурированных особым образом. Главные задачи SQL — составлять запросы так, чтобы<p> находить среди большого объёма информации ту, что нужна для конкретных целей, сортировать её,<p> структурировать и представлять в наиболее простом и понятном виде.
+                    </h3>
+                </div>
+    
+                <div id="kotlin_link">
+                    <h1>KOTLIN</h1>
+                    <h3>
+                        Kotlin создан на основе Java и не содержит многих библиотек, встраиваемых в разработку Android-приложений.<p> В 2019 Google объявил Kotlin предпочтительным языком для разработки приложений под Android.
+                    </h3>
+                    <h3>
+                        Разработала Kotlin питерская компания JetBrains и назвала его в честь острова Котлин в Финском заливе, на<p> котором расположен город Кронштадт. Kotlin используют в Google, Pinterest, Instagram*, TikTok.
+                    </h3>
+                </div>
+                
+                <div id="itog">
+                    <h1>Что выбрать для старта?</h1>
+                    <h3>
+                        Можно выбрать язык программирования по уровню зарплаты или престижа, но, как показывает практика, денежной мотивации хватает ненадолго: люди не выдерживают темпа и выгорают. Ключевые слова при выборе языка и направления — «Мне нравится».
+                    </h3>
+                    <h3>
+                        К выбору стека лучше подойти объективно: открыть сайты с вакансиями и посмотреть, что требуется на рынке.
+                    </h3>
+                    <h3>
+                        Для начала определись с целью:
+                        <p>1. Веб-разработка: HTML/CSS + JavaScript/TypeScript.
+                        <p>2. Мобильная разработка: Swift/Kotlin (iOS/Android), Flutter/Dart (кросс-платформенный).
+                        <p>3. Десктоп-приложения: Python, C# (.NET), Java.
+                        <p>4. Анализ данных и машинное обучение: Python.
+                        <p>5. Игры: C++ (Unreal Engine), C# (Unity).
+                        <p>6. Системное программирование: C/C++, Rust.
+                        <p>7. Бэкенд: Python, Node.js, Go, Java.
+                        <p>Выбирай тот язык, который ближе к твоей цели!
+                    </h3>
+                    <img src="images/sleepy-sleeping.gif" id="kirby">
+                </div>
+
+            </div>
+            </div>
+    </div>
+
+    <footer>
+        <div class="start">
+            <h3>Начать обучение</h3>
+            <p>Начните изучать языки программирования с нами.</p>
+            <button>Начать</button>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>SevenCode™</h3>
+                <p>Платформа для изучения языков программирования.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Полезные ссылки</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+
+            <div class="news-col">
+                <h4>Новостная рассылка</h4>
+                <p>Введите свой адрес электронной почты и получайте уведомления о новостях.</p>
+
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript">
+        const toggleMenuOpen = () => document.body.classList.toggle("open");
+    </script>
+
+</body>
+</html>

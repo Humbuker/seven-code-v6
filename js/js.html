@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js.css">
+    <title>SevenCode™ JavaScript</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title" onclick="window.location.href='/index.html'">SevenCode™</h1>
+        <nav class="navbar-menu">
+            <button type="button" class="active" onclick="window.location.href='/java/java.html'">┆Java</button>
+            <button type="button" class="active" onclick="window.location.href='/js/js.html'">┆JavaScript</button>
+            <button type="button" class="active" onclick="window.location.href='/python/python.html'">┆Python</button>
+            <button type="button" class="active" onclick="window.location.href='/cs/cs.html'">┆C#</button>
+            <button type="button" class="active" onclick="window.location.href='/cpp/cpp.html'">┆C++</button>
+            <button type="button" class="active" onclick="window.location.href='/php/php.html'">┆PHP</button>
+            <button type="button" class="active" onclick="window.location.href='/sql/sql.html'">┆SQL</button>
+            <button type="button" class="active" onclick="window.location.href='/html/ht.html'">┆HTML</button>
+            <button type="button" class="active" onclick="window.location.href='/kotlin/kot.html'">┆Kotlin</button>
+        </nav>
+    </nav>
+
+    <header class="main">
+        <h1>
+            Руководство по языку<p> программирования JavaScript
+        </h1>
+        <h3>
+            Сегодняшний мир веб-сайтов трудно представить без языка<p> JavaScript. JavaScript - это то, что делает живыми веб-страницы,<p> которые мы каждый день просматриваем в своем веб-браузере.
+        </h3>
+
+        <img src="assetsjs/js.jpg" id="js-img">
+    </header>
+
+    <div class="main-str1">
+       <p>
+        JavaScript - это язык программирования, используемый для создания динамического контента на веб-сайтах. Это легкий, кроссплатформенный, и однопоточный язык программирования. JavaScript - это интерпретируемый язык, который выполняет код построчно, обеспечивая большую гибкость.
+        </p>
+       <img src="assetsjs/js2.jpg" id="js1-img">
+    </div>
+
+    <div class="main-str2">
+        <p>
+            JavaScript был создан в 1995 году в компании Netscape разработчиком Брендоном Айком (Brendon Eich) в качестве языка сценариев в браузере Netscape Navigator 2. Первоначально язык назывался LiveScript, но на волне популярности в тот момент другого языка Java LiveScript был переименован в JavaScript. Однако данный момент до сих пор иногда приводит к некоторой путанице: некоторые начинающие разработчики считают, что Java и JavaScript чуть ли не один и тот же язык. Нет, это абсолютно два разных языка, и они связаны только по названию.
+        </p>
+        <img src="assetsjs/net.jpg" id="js2-img">
+    </div>
+
+    <div class="main-str3">
+        <p>
+            Каждое значение в программе JavaScript связано с типом данных. Тип данных определяет тип данных Number, String, Boolean, Double и т.д. Каждый тип данных требует разного объема памяти и имеет некоторые специфические операции, которые могут выполняться над ним. Типы данных в JavaScript можно разделить на два типа.
+        </p>
+        <h1>
+            Примитивный тип данных
+        </h1>
+        <p>
+            Предопределенные типы данных, предоставляемые языком JavaScript, известны как примитивные типы данных. Примитивные типы данных также известны как встроенные типы данных.
+        </p>
+        <h1>
+            Непримитивные типы данных
+        </h1>
+        <p>
+            Типы данных, производные от примитивных типов данных, известны как непримитивные типы данных. Они также известны как производные типы данных или ссылочные типы данных.
+        </p>
+        <img src="assetsjs/js3-img.png" id="js3-img">
+    </div>
+
+    <div class="main-str4">
+        <p>
+            Переменные используются для хранения данных в JavaScript, чтобы мы могли позже получить к ним доступ. JavaScript это язык с динамической типизацией, поэтому тип переменных определяется во время выполнения. Следовательно, нет необходимости явно определять тип переменной. Мы можем объявлять переменные в JavaScript тремя способами:
+        </p>
+        <li>Ключевое слово JS var</li>
+        <li>Ключевое слово JS let</li>
+        <li>Ключевое слово JS const</li>
+        <img src="assetsjs/js4.png" id="js4-img">
+    </div>
+
+    <div class="main-str5">
+        <p>
+            Массив в JavaScript — это структура, в которой можно хранить коллекции элементов — чисел, строк, других массивов и так далее. Элементы нумеруются и хранятся в том порядке, в котором их поместили в массив.<p>
+Создать массив можно с помощью квадратных скобок. []1 Например, можно создать пустой массив:<p> const guestList = [].<p> А можно создать сразу с элементами внутри: <p>const theGirlList = [ 'Серсея', 'Илин Пейн', 'Меррин Трант', 'Дансен', 'Гора'].
+        </p>
+        <img src="assetsjs/js5.png" id="js5-img">
+    </div>
+
+    <div class="main-str6">
+        <p>
+            Функция в JavaScript - это повторно используемый блок кода, который выполняет определенную задачу. Вы определяете ее один раз, а затем можете запускать (или “вызывать”) ее всякий раз, когда вам нужно выполнить эту задачу в вашей программе.
+        </p>
+        <img src="assetsjs/js6.png" id="js6-img">
+    </div>
+
+    <div class="main-str7">
+        <p>
+            Регулярное выражение - это специальная последовательность символов, которая определяет шаблон поиска, обычно используемый для сопоставления с шаблоном в тексте. Он часто используется для таких задач, как проверка адресов электронной почты, номеров телефонов или проверка того, содержит ли строка определенные шаблоны (например, даты, определенные слова и т.д.).
+        </p>
+        <img src="assetsjs/js7.png" id="js7-img">
+    </div>
+
+
+    <div class="FAQ">
+        <div class="one">
+            <h1>
+                Что такое JavaScript?
+            </h1>
+            <p>
+                JavaScript - самый мощный и универсальный язык веб-программирования. Он используется для придания веб-сайтам интерактивности. JavaScript помогает нам добавлять на веб-страницы такие функции, как анимация, интерактивные формы и динамический контент.
+            </p>
+        </div>
+
+        <div class="two">
+            <h1>
+                Какие версии JS рассматриваются в этом пособии?
+            </h1>
+            <p>
+                Это Учебное пособие по JS охватывает широкий спектр версий JavaScript, от основ до более продвинутых концепций. Оно включает в себя обе старые версии, такие как ES5 и ES6, а также более поздние версии и функции, представленные в ES7, ES8, ES9 и более поздних версиях.
+            </p>
+        </div>
+
+        <div class="three">
+            <h1>
+                Для чего используется JavaScript?
+            </h1>
+            <p>
+                JavaScript в основном используется для улучшения веб-страниц за счет добавления интерактивности, динамического контента и удобных для пользователя функций. Он запускается непосредственно в веб-браузерах и позволяет разработчикам создавать отзывчивые и привлекательные пользовательские интерфейсы.
+            </p>
+        </div>
+
+        <div class="four">
+            <h1>
+                Что такое фреймворки JavaScript?
+            </h1>
+            <p>
+                Фреймворки JavaScript (такие как Angular или Vue.js) предоставляют структурированный способ создания веб-приложений. Они предлагают готовые компоненты, маршрутизацию, управление состоянием и другие инструменты для оптимизации разработки.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="start">
+            <h3>Начать обучение</h3>
+            <p>Начните изучать языки программирования с нами.</p>
+            <button>Начать</button>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>SevenCode™</h3>
+                <p>Платформа для изучения языков программирования.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Полезные ссылки</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+
+            <div class="news-col">
+                <h4>Новостная рассылка</h4>
+                <p>Введите свой адрес электронной почты и получайте уведомления о новостях.</p>
+
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

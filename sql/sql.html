@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py.css">
+    <link rel="stylesheet" href="sql.css">
+    <title>SevenCode™ SQL</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title" onclick="window.location.href='/index.html'">SevenCode™</h1>
+        <nav class="navbar-menu">
+            <button type="button" class="active" onclick="window.location.href='/java/java.html'">┆Java</button>
+            <button type="button" class="active" onclick="window.location.href='/js/js.html'">┆JavaScript</button>
+            <button type="button" class="active" onclick="window.location.href='/python/python.html'">┆Python</button>
+            <button type="button" class="active" onclick="window.location.href='/cs/cs.html'">┆C#</button>
+            <button type="button" class="active" onclick="window.location.href='/cpp/cpp.html'">┆C++</button>
+            <button type="button" class="active" onclick="window.location.href='/php/php.html'">┆PHP</button>
+            <button type="button" class="active" onclick="window.location.href='/sql/sql.html'">┆SQL</button>
+            <button type="button" class="active" onclick="window.location.href='/html/ht.html'">┆HTML</button>
+            <button type="button" class="active" onclick="window.location.href='/kotlin/kot.html'">┆Kotlin</button>
+        </nav>
+    </nav>
+
+    <header class="main">
+        <h1>
+            Руководство по языку<p> программирования SQL
+        </h1>
+        <h3>
+            MySQL представляет систему управления реляционными<p> базами данных (СУБД). На сегодняшний день это одна<p> из самых популярных систем управления базами данных.
+        </h3>
+
+        <img src="assetssql/sql.jpg" id="sql-img">
+    </header>
+
+    <div class="main-str1">
+       <p>
+            Изначальным разработчиком данной СУБД была шведская компания MySQL AB. В 1995 году она выпустила первый релиз MySQL. В 2008 году компания MySQL AB была куплена компанией Sun Microsystems, а в 2010 году уже компания Oracle поглотила Sun и тем самым приобрела права на торговую марку MySQL. Поэтому MySQL на сегодняшний день развивается под эгидой Oracle.
+        </p>
+       <img src="assetssql/oracle2.jpg" id="sql1-img">
+    </div>
+
+    <div class="main-str2">
+        <p>
+            Все SQL выражения начинаются с одного из следующих ключевых слов: 
+        </p>
+        <li>SELECT</li>
+        <li>INSERT</li>
+        <li>UPDATE</li>
+        <li>DELETE</li>
+        <li>ALTER</li>
+        <li>DROP</li>
+        <li>CREATE</li>
+        <li>USE</li>
+        <li>SHOW</li>
+
+        <p>В конце каждого выражения должна стоять точка с запятой “;”.</p>
+    </div>
+
+    <div class="main-str3">
+        <h3>
+            SQL выражение CREATE DATABASE используется для создания новой базы данных (далее – БД).
+            Общий синтаксис имеет следующий вид:
+        </h3>
+
+        <p>CREATE DATABASE имя_базы_данных;</p>
+        <p>Имя БД должно быть уникальным для RDBMS.</p>
+    </div>
+
+    <div class="main-str4">
+        <h3>
+            Для удаления существующих таблиц и всех её данных из базы данных (далее – БД) используется SQL выражение DROP TABLE.
+        </h3>
+
+        <p>Данная команда имеет следующий вид:</p>
+        <p>DROP TABLE имя_таблицы;</p>
+    </div>
+
+    <div class="main-str5">
+        <h3>
+            Для добавления новых записей в таблицу базы данных (далее – БД) мы используем SQL выражение INSERT INTO.
+        </h3>
+
+        <p>Общий вид выражения имеет следующий вид:</p>
+        <p>INSERT INTO имя_таблицы (колонка1, колонка2 ...)<p>
+            VALUES (значение1, значение2 ...);</p>
+    </div>
+
+    <div class="main-str6">
+        <h3>
+            Для удаления данных из базы данных (далее – БД) мы используем SQL выражение DELETE.
+        </h3>
+
+        <p>Для того, чтобы указать, какие именно данные мы хотим удалить используется условный оператор WHERE.</p>
+        <p>DELETE FROM имя_таблицы
+            WHERE [условие];</p>
+    </div>
+
+        <div class="FAQ">
+        <div class="one">
+            <h1>
+                Что такое полная форма SQL?
+            </h1>
+            <p>
+                Полная форма SQL - это Язык структурированных запросов (Structured Query Language). 
+            </p>
+        </div>
+
+        <div class="two">
+            <h1>
+                Легко ли изучать SQL?
+            </h1>
+            <p>
+                Да, чтобы стать профессионалом в SQL, потребуется от 3 до 6 месяцев, так что это язык программирования, который сравнительно легко освоить.
+            </p>
+        </div>
+
+        <div class="three">
+            <h1>
+                Можете ли вы выучить SQL самостоятельно?
+            </h1>
+            <p>
+                Да, вы можете легко выучить SQL самостоятельно, просто найдите хороший ресурс, такой как W3Schools или YouTube.
+            </p>
+        </div>
+
+        <div class="four">
+            <h1>
+                Для чего используется SQL?
+            </h1>
+            <p>
+                SQL используется для широкого спектра задач управления базами данных, но вот некоторые из его наиболее распространенных приложений: создание, чтение, обновление и удаление данных (CRUD), а также выполнение сложных запросов для анализа информации.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="start">
+            <h3>Начать обучение</h3>
+            <p>Начните изучать языки программирования с нами.</p>
+            <button>Начать</button>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>SevenCode™</h3>
+                <p>Платформа для изучения языков программирования.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Полезные ссылки</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+
+            <div class="news-col">
+                <h4>Новостная рассылка</h4>
+                <p>Введите свой адрес электронной почты и получайте уведомления о новостях.</p>
+
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

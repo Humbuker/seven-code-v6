@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py.css">
+    <link rel="stylesheet" href="ht.css">
+    <title>SevenCode™ HTML</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title" onclick="window.location.href='/index.html'">SevenCode™</h1>
+        <nav class="navbar-menu">
+            <button type="button" class="active" onclick="window.location.href='/java/java.html'">┆Java</button>
+            <button type="button" class="active" onclick="window.location.href='/js/js.html'">┆JavaScript</button>
+            <button type="button" class="active" onclick="window.location.href='/python/python.html'">┆Python</button>
+            <button type="button" class="active" onclick="window.location.href='/cs/cs.html'">┆C#</button>
+            <button type="button" class="active" onclick="window.location.href='/cpp/cpp.html'">┆C++</button>
+            <button type="button" class="active" onclick="window.location.href='/php/php.html'">┆PHP</button>
+            <button type="button" class="active" onclick="window.location.href='/sql/sql.html'">┆SQL</button>
+            <button type="button" class="active" onclick="window.location.href='/html/ht.html'">┆HTML</button>
+            <button type="button" class="active" onclick="window.location.href='/kotlin/kot.html'">┆Kotlin</button>
+        </nav>
+    </nav>
+
+    <header class="main">
+        <h1>
+            Руководство по языку<p> программирования HTML
+        </h1>
+        <h3>
+            HTML (HyperText Markup Language) представляет язык разметки<p> гипертекста, используемый преимущественно для создания<p> документов в сети интернет.
+        </h3>
+
+        <img src="assetsht/ht.jpg" id="ht-img">
+    </header>
+
+    <div class="main-str1">
+       <p>
+            Изначально HTML был создан Тимом Бернерсом-Ли в 1991 году как способ обмена документами и структурирования их в Интернете.<p>
+            Первой версией в истории был HTML 1.0, базовая и ограниченная версия. Однако первая стандартизированная версия, HTML 2.0 был опубликован в 1995 году, заложив основу для веб-разработки в том виде, в каком мы ее знаем сегодня
+        </p>
+       <img src="assetsht/ht1.png" id="ht1-img">
+    </div>
+
+    <div class="main-str2">
+        <p>
+            HTML-элемент и HTML-теги связаны, но различны. An HTML элемент представляет собой полную структуру, включая открывающий тег, содержимое (если таковое имеется) и закрывающий тег (если применимо).
+            <P>С другой стороны, тег - это фактическое ключевое слово или имя, заключенное в угловые скобки (< >), который сообщает браузеру, какого рода контент следует ожидать.
+        </p>
+        <img src="assetsht/ht2.png" id="ht2-img">
+        </div>
+
+    <div class="main-str3">
+        <p>
+            В отличие от других языков программирования, HTML не отображает выходные данные компилятора. Веб-браузеры показывают результаты выполнения HTML-кода.
+            Он считывает HTML-файлы и определяет способ отображения содержимого с помощью HTML-тегов. Любой веб-браузер (Google, Safari, Mozilla Firefoxи т.д.) можно использовать для открытия . HTML файла и просмотра результатов.
+        </p>
+        <img src="assetsht/ht3.png" id="ht3-img">
+    </div>
+
+    <div class="main-str4">
+        <h1>
+            Базовая структура HTML
+        </h1>
+
+        <img src="assetsht/ht4.png" id="ht4-img">
+    </div>
+
+    <div class="main-str5">
+        <h1>
+            Некоторые ключевые моменты о элементах HTML
+        </h1>
+        <h3>
+            1. Синтаксис:
+        </h3>
+        <li>Открывающий тег указывает, с чего начинается содержимое: tagname.</li>
+        <li>Закрывающий тег указывает, где заканчивается содержимое: tagname.</li>
+        <li>Фактическое содержимое находится между открывающим и закрывающим тегами.</li>
+        
+        <h3>
+            2. Чувствительность к регистру:
+        </h3>
+        <li>HTML-теги нечувствительны к регистру. Например, B и b оба текста выделены жирным шрифтом.</li>
+        <li>Однако рекомендуется использовать теги в нижнем регистре для обеспечения согласованности и удобочитаемости.</li>
+    </div>
+
+    <div class="main-str6">
+        <h3>
+            Вложенные элементы HTML возникают, когда один элемент помещается внутри другого, создавая иерархическую структуру. Эта структура имеет решающее значение для эффективной организации контента на веб-страницах, гарантируя, что различные элементы логически и визуально связаны друг с другом.
+        </h3>
+
+        <img src="assetsht/ht5.png" id="ht6-img">
+    </div>
+
+        <div class="FAQ">
+        <div class="one">
+            <h1>
+                Что такое HTML?
+            </h1>
+            <p>
+                HTML - это глобальный язык разметки для Интернета. Вы можете создать любую веб-страницу с помощью HTML, и любой браузер может открыть этот HTML-файл.
+            </p>
+        </div>
+
+        <div class="two">
+            <h1>
+                Каковы основы HTML?
+            </h1>
+            <p>
+                Основы HTML включают понимание синтаксиса, элементов / тегов, атрибутов, структуры и форматирования HTML-файла.
+            </p>
+        </div>
+
+        <div class="three">
+            <h1>
+                Что такое синтаксис HTML?
+            </h1>
+            <p>
+                Синтаксис HTML означает набор правил и регламентов, которые определяют, как структурируется и пишется HTML-код.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="start">
+            <h3>Начать обучение</h3>
+            <p>Начните изучать языки программирования с нами.</p>
+            <button>Начать</button>
+        </div>
+
+        <div class="cols">
+            <div class="about-col">
+                <h3>SevenCode™</h3>
+                <p>Платформа для изучения языков программирования.</p>
+            </div>
+
+            <div class="links-col">
+                <h4>Полезные ссылки</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="links-col">
+                <h4>Социальные сети</h4>
+                <a href="#">Youtube</a>
+                <a href="#">Github</a>
+            </div>
+
+            <div class="news-col">
+                <h4>Новостная рассылка</h4>
+                <p>Введите свой адрес электронной почты и получайте уведомления о новостях.</p>
+
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button><i class='bx bxl-telegram'></i></button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
